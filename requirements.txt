@@ -1,0 +1,22 @@
+# E-RECOLTE - Phase 1 MVP
+# Dépendances pour l'entraînement (Kaggle) et l'application de démonstration (Streamlit)
+
+# --- Deep Learning ---
+torch>=2.1.0
+torchvision>=0.16.0
+
+# --- Métriques / évaluation ---
+scikit-learn>=1.3.0
+
+# --- Traitement d'images ---
+Pillow>=10.0.0
+
+# --- Calcul scientifique ---
+numpy>=1.24.0
+
+# --- Application de démonstration ---
+streamlit>=1.32.0
+
+# --- Utilitaires ---
+pandas>=2.0.0
+tqdm>=4.66.0

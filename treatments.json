@@ -1,0 +1,214 @@
+{
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "nom_affichage": "Cercosporiose du maïs (taches grises des feuilles)",
+    "nom_scientifique_agent": "Cercospora zeae-maydis",
+    "culture": "Maïs",
+    "icone": "🌽",
+    "gravite": "Élevée",
+    "symptomes": [
+      "Petites taches rectangulaires grises à brunes, allongées le long des nervures",
+      "Les taches s'étendent et fusionnent, donnant un aspect grillé à la feuille",
+      "Apparition d'abord sur les feuilles basses, progression vers le haut du plant",
+      "Dans les cas sévères, dessèchement complet du feuillage avant la maturité"
+    ],
+    "traitement_bio": [
+      "Rotation culturale sur 2 à 3 ans avec une culture non-hôte (légumineuses, riz)",
+      "Enfouissement ou destruction des résidus de récolte infectés après moisson",
+      "Espacement des plants pour améliorer l'aération et réduire l'humidité du feuillage",
+      "Pulvérisation d'extrait de neem ou de bouillie bordelaise en prévention précoce"
+    ],
+    "traitement_chimique": [
+      "Fongicide à base de strobilurine (azoxystrobine) en application préventive au stade V8-V10",
+      "Fongicide triazole (propiconazole) si la pression de la maladie est forte",
+      "Respecter le délai avant récolte (DAR) indiqué sur l'étiquette du produit"
+    ],
+    "prevention": [
+      "Choisir des variétés de maïs tolérantes/résistantes disponibles localement",
+      "Éviter le semis en continu de maïs sur la même parcelle",
+      "Surveiller les champs dès le stade 6-8 feuilles, période de contamination critique",
+      "Éviter l'irrigation par aspersion qui prolonge l'humidité foliaire"
+    ],
+    "resume_audio": "Votre maïs a des taches grises allongées sur les feuilles, c'est la cercosporiose : détruisez les résidus après récolte, faites une rotation avec une autre culture, et espacez bien vos plants."
+  },
+
+  "Corn_(maize)___Common_rust_": {
+    "nom_affichage": "Rouille commune du maïs",
+    "nom_scientifique_agent": "Puccinia sorghi",
+    "culture": "Maïs",
+    "icone": "🌽",
+    "gravite": "Moyenne",
+    "symptomes": [
+      "Petites pustules poudreuses de couleur brun-rouille sur les deux faces des feuilles",
+      "Les pustules libèrent une poudre rougeâtre au toucher (spores)",
+      "Avec le temps, les pustules noircissent en fin de cycle",
+      "Feuillage qui jaunit et sèche prématurément en cas de forte infestation"
+    ],
+    "traitement_bio": [
+      "Élimination manuelle et destruction des feuilles fortement atteintes en début d'attaque",
+      "Renforcement de la vigueur de la plante par un apport de compost/matière organique",
+      "Décoction d'ail ou de piment en pulvérisation préventive (effet répulsif léger)",
+      "Favoriser une bonne circulation d'air en évitant les semis trop denses"
+    ],
+    "traitement_chimique": [
+      "Fongicide à base de mancozèbe en traitement préventif dès les premiers symptômes",
+      "Fongicide systémique triazole (tebuconazole) en cas de progression rapide",
+      "Traiter tôt le matin ou en fin de journée pour une meilleure efficacité"
+    ],
+    "prevention": [
+      "Privilégier des variétés tolérantes à la rouille commune",
+      "Semer suffisamment tôt pour éviter les périodes les plus humides favorables au champignon",
+      "Surveiller régulièrement le dessous des feuilles où les pustules apparaissent en premier",
+      "Éviter l'excès d'azote qui rend le feuillage plus sensible"
+    ],
+    "resume_audio": "Votre maïs a des petites taches rouille-brun poudreuses sur les feuilles, c'est la rouille du maïs : enlevez les feuilles très atteintes, évitez de semer trop serré, et traitez tôt si l'attaque progresse."
+  },
+
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "nom_affichage": "Helminthosporiose du maïs (brûlure nordique des feuilles)",
+    "nom_scientifique_agent": "Exserohilum turcicum",
+    "culture": "Maïs",
+    "icone": "🌽",
+    "gravite": "Élevée",
+    "symptomes": [
+      "Grandes lésions allongées en forme de cigare, gris-vert à brun clair",
+      "Lésions de 2 à 15 cm, orientées parallèlement aux nervures",
+      "Apparition en premier sur les feuilles inférieures puis extension vers le haut",
+      "Dans les cas graves, les lésions fusionnent et brûlent de larges zones de la feuille"
+    ],
+    "traitement_bio": [
+      "Rotation culturale de 1 à 2 ans avec une culture non-céréalière",
+      "Labour ou enfouissement profond des résidus de maïs après récolte",
+      "Utilisation de semences saines certifiées, non issues de champs infectés",
+      "Renforcement de la plante par une fertilisation organique équilibrée"
+    ],
+    "traitement_chimique": [
+      "Fongicide à base de strobilurine + triazole en mélange dès le stade 8-10 feuilles",
+      "Répéter le traitement après 14-21 jours si les conditions restent humides",
+      "Respecter les doses homologuées pour limiter les résistances du champignon"
+    ],
+    "prevention": [
+      "Semer des variétés résistantes ou tolérantes à l'helminthosporiose",
+      "Éviter la monoculture de maïs sur plusieurs saisons consécutives",
+      "Assurer un bon drainage des parcelles pour limiter l'humidité stagnante",
+      "Surveillance renforcée pendant les périodes chaudes et humides (favorables au champignon)"
+    ],
+    "resume_audio": "Votre maïs a de grandes taches en forme de cigare brun-gris sur les feuilles, c'est l'helminthosporiose : détruisez les résidus après récolte, faites une rotation de culture, et choisissez des semences résistantes la prochaine fois."
+  },
+
+  "Corn_(maize)___healthy": {
+    "nom_affichage": "Plant de maïs sain",
+    "nom_scientifique_agent": null,
+    "culture": "Maïs",
+    "icone": "🌽",
+    "gravite": "Sain",
+    "symptomes": [
+      "Feuillage vert uniforme, sans taches ni pustules",
+      "Croissance régulière adaptée au stade phénologique",
+      "Absence de flétrissement ou de dessèchement anormal"
+    ],
+    "traitement_bio": [
+      "Aucun traitement curatif nécessaire",
+      "Poursuivre les bonnes pratiques agro-écologiques déjà en place"
+    ],
+    "traitement_chimique": [
+      "Aucun traitement chimique nécessaire"
+    ],
+    "prevention": [
+      "Continuer la surveillance régulière du champ (au moins une fois par semaine)",
+      "Maintenir la rotation des cultures pour préserver la santé du sol",
+      "Assurer une fertilisation équilibrée en NPK selon les recommandations agronomiques",
+      "Vérifier l'état du feuillage après chaque épisode de pluie prolongée"
+    ],
+    "resume_audio": "Bonne nouvelle, votre plant de maïs est en bonne santé : continuez la surveillance régulière et gardez les mêmes bonnes pratiques."
+  },
+
+  "Potato___Early_blight": {
+    "nom_affichage": "Alternariose de la pomme de terre (brûlure précoce)",
+    "nom_scientifique_agent": "Alternaria solani",
+    "culture": "Pomme de Terre",
+    "icone": "🥔",
+    "gravite": "Modérée à Élevée",
+    "symptomes": [
+      "Taches circulaires brunes à noires avec anneaux concentriques cibles sur les feuilles âgées",
+      "Jaunissement des tissus foliaires entourant les lésions principales",
+      "Dessèchement progressif de la feuille puis chute prématurée du feuillage",
+      "Taches sombres, coriaces et enfoncées sur les tubercules lors des fortes attaques"
+    ],
+    "traitement_bio": [
+      "Rotation des cultures sur 3 à 4 ans en excluant les solanacées (tomate, aubergine)",
+      "Pulvérisation d'extraits de prêle des champs ou de décoction d'ail dès les premiers signes",
+      "Apport d'amendement organique composté pour stimuler les défenses naturelles du plant",
+      "Paillage au sol pour éviter les projections de terre contaminée sur le feuillage"
+    ],
+    "traitement_chimique": [
+      "Fongicide de contact préventif à base de mancozèbe ou chlorothalonil",
+      "Application de produit cuivré (bouillie bordelaise) en alternance",
+      "Respecter un intervalle de 7 à 10 jours en période chaude et humide"
+    ],
+    "prevention": [
+      "Utiliser des tubercules de semence certifiés exempts d'Alternaria",
+      "Maintenir un équilibre de fertilisation azotée (éviter les carences et excès)",
+      "Éviter les arrosages par aspersion en fin de journée",
+      "Éliminer et incinérer les fans et résidus de récolte après la fane"
+    ],
+    "resume_audio": "Votre plant de pomme de terre a l'alternariose avec des taches concentriques brunes : éliminez les feuilles atteintes, évitez de mouiller le feuillage et faites une rotation de culture."
+  },
+
+  "Potato___Late_blight": {
+    "nom_affichage": "Mildiou de la pomme de terre (brûlure tardive)",
+    "nom_scientifique_agent": "Phytophthora infestans",
+    "culture": "Pomme de Terre",
+    "icone": "🥔",
+    "gravite": "Très Élevée (Urgence)",
+    "symptomes": [
+      "Grandes taches d'aspect brun-noirâtre ou d'aspect huileux sur le feuillage",
+      "Duvet ou feutrage blanc cotonneux visible sous les feuilles par forte humidité",
+      "Flétrissement et brunissement très rapide de la totalité du feuillage en quelques jours",
+      "Pourriture brune fermée et irrégulière sous la peau des tubercules"
+    ],
+    "traitement_bio": [
+      "Traitement préventif régulier à la bouillie bordelaise ou au sulfate de cuivre",
+      "Coupe et destruction immédiate par le feu des tiges et feuilles infectées",
+      "Butage très prononcé des rangs pour protéger les tubercules de la descente des spores",
+      "Défannage mécanique 2 semaines avant la récolte pour sécuriser la conservation"
+    ],
+    "traitement_chimique": [
+      "Fongicide pénétrant/systémique (cymoxanil, metalaxyl-M ou fluazinam) en urgence",
+      "Renouvellement tous les 5 à 7 jours tant que la météo reste très humide",
+      "Alternance impérative des familles chimiques pour empêcher les résistances"
+    ],
+    "prevention": [
+      "Planter des variétés présentant une bonne résistance génétique au mildiou",
+      "Éliminer impérativement les tas de déchets et tubercules rejetés aux abords des champs",
+      "Planter à écartement suffisant pour garantir un séchage rapide du feuillage",
+      "Suivre scrupuleusement les bulletins de santé végétale et alertes météo"
+    ],
+    "resume_audio": "Attention, votre plant a le mildiou : c'est une maladie très grave. Traitez immédiatement à la bouillie bordelaise ou fongicide systémique, éliminez les parties atteintes et buttez bien vos rangs."
+  },
+
+  "Potato___healthy": {
+    "nom_affichage": "Plant de pomme de terre sain",
+    "nom_scientifique_agent": null,
+    "culture": "Pomme de Terre",
+    "icone": "🥔",
+    "gravite": "Sain",
+    "symptomes": [
+      "Végétation bien verte, dense et vigoureuse",
+      "Feuilles lisses sans taches, décolorations ni nécroses",
+      "Développement sain de la tige principale et de l'appareil racinaire"
+    ],
+    "traitement_bio": [
+      "Aucun traitement curatif nécessaire",
+      "Poursuivre un entretien régulier et un paillage protecteur"
+    ],
+    "traitement_chimique": [
+      "Aucun traitement chimique requis"
+    ],
+    "prevention": [
+      "Inspecter régulièrement les plants (au moins une fois par semaine)",
+      "Maintenir un butage adéquat pour isoler les tubercules de la lumière et des parasites",
+      "Conserver une rotation minimale de 3 ans avant d'implanter à nouveau des pommes de terre"
+    ],
+    "resume_audio": "Excellente nouvelle, votre plant de pomme de terre est en parfaite santé ! Continuez les arrosages au pied et la surveillance habituelle."
+  }
+}

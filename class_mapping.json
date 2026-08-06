@@ -1,0 +1,47 @@
+{
+  "index_to_class": {
+    "0": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+    "1": "Corn_(maize)___Common_rust_",
+    "2": "Corn_(maize)___Northern_Leaf_Blight",
+    "3": "Corn_(maize)___healthy"
+  },
+  "class_to_index": {
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 0,
+    "Corn_(maize)___Common_rust_": 1,
+    "Corn_(maize)___Northern_Leaf_Blight": 2,
+    "Corn_(maize)___healthy": 3
+  },
+  "architecture": "efficientnet_b0",
+  "img_size": 224,
+  "models": {
+    "mais": {
+      "name": "Maïs (Corn)",
+      "icone": "🌽",
+      "model_path": "mais_disease_model.pth",
+      "architecture": "efficientnet_b0",
+      "img_size": 224,
+      "accuracy": 97.75,
+      "f1_score": 0.970,
+      "index_to_class": {
+        "0": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+        "1": "Corn_(maize)___Common_rust_",
+        "2": "Corn_(maize)___Northern_Leaf_Blight",
+        "3": "Corn_(maize)___healthy"
+      }
+    },
+    "potato": {
+      "name": "Pomme de Terre (Potato)",
+      "icone": "🥔",
+      "model_path": "potato_disease_model.pth",
+      "architecture": "mobilenet_v2",
+      "img_size": 224,
+      "accuracy": 96.80,
+      "f1_score": 0.965,
+      "index_to_class": {
+        "0": "Potato___Early_blight",
+        "1": "Potato___Late_blight",
+        "2": "Potato___healthy"
+      }
+    }
+  }
+}
