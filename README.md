@@ -1,100 +1,112 @@
-# 🌾 E-RECOLTE v2.0 — Plateforme IA de Diagnostic Phytosanitaire Multi-Cultures
+# E-RECOLTE — Plant Disease Detection | Détection des maladies des plantes
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.1%2B-orange.svg)](https://pytorch.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.32%2B-red.svg)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+> **EN:** Streamlit and PyTorch application for image-based plant disease classification and agronomic information.  
+> **FR :** Application Streamlit et PyTorch de classification des maladies des plantes à partir d'images et de consultation d'informations agronomiques.
 
-**E-RECOLTE v2.0** est une plateforme web interactive basée sur la vision par ordinateur et le Deep Learning, conçue pour assister les agriculteurs, techniciens agricoles et agronomes dans le diagnostic rapide des maladies du **Maïs 🌽** et de la **Pomme de Terre 🥔**, avec préconisations de traitements adaptés et restitution vocale en langues locales.
+## 🇬🇧 English
 
----
+### Overview
+E-RECOLTE is an image-classification prototype designed to assist with the visual identification of plant diseases. The repository contains a Streamlit application, PyTorch model weights, class mappings, a treatment-information file and a training report.
 
-## 🌟 Fonctionnalités Principales
+### Current project components
+- `app.py`: Streamlit user interface and model inference.
+- `class_mapping.json`: class labels and model configuration.
+- `treatments.json`: disease descriptions and agronomic guidance.
+- `mais_disease_model.pth`: corn model weights.
+- `potato_disease_model.pth`: potato model weights.
+- `training_report.json`: recorded training and validation metrics.
+- `training_curves.png`: training-curve visualization.
+- `sample_images/`: sample images, where provided.
+- `requirements.txt`: Python dependencies.
 
-- 🧠 **Moteur Multi-Modèles Synchronisé** :
-  - **🌽 Modèle Maïs** : Basé sur **EfficientNet-B0** (*Précision globale : 97.75%*).
-  - **🥔 Modèle Pomme de Terre** : Basé sur **MobileNet-V2** (*Précision globale : 96.80%*).
-  - **⚡ Auto-détection** : Sélection automatique du modèle pertinent selon l'image fournie.
-- 🔬 **Diagnostic Visuel Instantané** :
-  - Import de fichiers (JPG, PNG), capture caméra en direct ou sélection parmi des échantillons de démonstration.
-  - Cartes de statut colorées avec indices de confiance et répartition des probabilités par classe.
-- 📋 **Recommandations Agronomiques sur Mesure** :
-  - **🌿 Traitement Biologique** (agro-écologie, extraits naturels, rotation).
-  - **🧪 Traitement Chimique** (molécules homologuées et respect des Délais Avant Récolte - DAR).
-  - **🛡️ Prévention & Pratiques Culturales**.
-- 🔊 **Restitution Vocale en Langues Locales** :
-  - Synthèse et accompagnement vocal disponible en **Français**, **Pular**, **Malinké** et **Soussou**.
-- 📊 **Tableau de Bord & Encyclopédie** :
-  - Comparatif technique des réseaux de neurones et visualisation des courbes d'apprentissage (Loss/Accuracy).
-  - Guide complet et moteur de recherche intégré pour toutes les pathologies référencées.
+### Application workflow
+1. Launch the Streamlit application.
+2. Upload a plant-leaf image (JPG, JPEG or PNG).
+3. The application preprocesses the image and runs the configured PyTorch model.
+4. Review the predicted class, confidence and class-probability breakdown.
+5. Consult the disease information and the biological, chemical and prevention guidance available in the local knowledge file.
 
----
+### Recorded evaluation
+The committed `training_report.json` records the following results for a four-class corn classification run:
 
-## 📊 Performance des Modèles Synchronisés
+| Metric | Recorded value |
+|---|---:|
+| Validation accuracy | 97.75% |
+| Macro F1-score | 0.9703 |
+| Validation samples | 577 |
+| Epochs recorded | 10 |
 
-| Culture | Architecture | Nb. Paramètres | Précision (Val Acc) | Score Macro F1 | Classes Référencées |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **🌽 Maïs** | `EfficientNet-B0` | ~4.0M | **97.75 %** | **0.970** | Cercosporiose, Rouille, Helminthosporiose, Sain |
-| **🥔 Pomme de Terre** | `MobileNet-V2` | ~2.2M | **96.80 %** | **0.965** | Alternariose, Mildiou, Sain |
+These values describe the committed experiment only. They are not a guarantee of performance on new farms, cameras, lighting conditions or field images. The README does not claim equivalent performance for the potato model because a corresponding evaluation report is not present in the repository root.
 
----
-
-## 🚀 Installation & Lancement Local
-
-### 1. Cloner le dépôt GitHub
+### Installation
 ```bash
 git clone https://github.com/Slymanidiallo/erecolte-plant-disease-detection.git
 cd erecolte-plant-disease-detection
-```
-
-### 2. Créer et activer un environnement virtuel (optionnel mais recommandé)
-```bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
-
-# Linux / MacOS
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 3. Installer les dépendances
-```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
-```
-
-### 4. Lancer l'application Streamlit
-```bash
 streamlit run app.py
 ```
 
-L'application s'ouvrira automatiquement dans votre navigateur à l'adresse `http://localhost:8501`.
+The model weights and JSON configuration files must remain at the paths expected by the application.
 
----
+### Limitations and responsible use
+- Predictions are experimental and may be wrong; consult an agronomist before acting on a diagnosis.
+- Treatment advice must be checked against local regulations, product labels, crop conditions and pre-harvest intervals.
+- The code describes the voice interface as a simulation; real text-to-speech in local languages is not implemented in this version.
+- Do not interpret the model's confidence as a calibrated probability of disease.
 
-## 📁 Structure du Projet
+## 🇫🇷 Français
 
-```text
-erecolte-plant-disease-detection/
-├── app.py                     # Code principal de l'application Streamlit v2.0
-├── class_mapping.json         # Mappings et configurations des modèles (Maïs & Patate)
-├── treatments.json            # Base de connaissances agronomiques et recommandations
-├── mais_disease_model.pth     # Poids entraînés du modèle Maïs (EfficientNet-B0)
-├── potato_disease_model.pth   # Poids entraînés du modèle Pomme de terre (MobileNet-V2)
-├── training_report.json       # Rapport de validation et historique d'entraînement
-├── training_curves.png        # Courbes graphiques de convergence
-├── requirements.txt           # Dépendances Python nécessaires
-├── sample_images/             # Échantillons d'images de test pour la démo
-└── README.md                  # Documentation du projet
+### Présentation
+E-RECOLTE est un prototype de classification d'images destiné à aider à l'identification visuelle des maladies des plantes. Le dépôt contient une application Streamlit, des poids de modèles PyTorch, des correspondances de classes, un fichier d'informations agronomiques et un rapport d'entraînement.
+
+### Composants actuels
+- `app.py` : interface Streamlit et inférence du modèle.
+- `class_mapping.json` : libellés des classes et configuration du modèle.
+- `treatments.json` : descriptions des maladies et conseils agronomiques.
+- `mais_disease_model.pth` : poids du modèle pour le maïs.
+- `potato_disease_model.pth` : poids du modèle pour la pomme de terre.
+- `training_report.json` : métriques enregistrées d'entraînement et de validation.
+- `training_curves.png` : visualisation des courbes d'apprentissage.
+- `sample_images/` : images d'exemple, lorsqu'elles sont présentes.
+- `requirements.txt` : dépendances Python.
+
+### Fonctionnement
+1. Lancer l'application Streamlit.
+2. Importer une image de feuille (JPG, JPEG ou PNG).
+3. L'application prétraite l'image et exécute le modèle PyTorch configuré.
+4. Examiner la classe prédite, le score de confiance et les probabilités par classe.
+5. Consulter les informations sur la maladie et les conseils biologiques, chimiques et préventifs disponibles dans le fichier local.
+
+### Résultats enregistrés
+Le fichier `training_report.json` contient les résultats suivants pour une expérience de classification du maïs en quatre classes :
+
+| Métrique | Valeur enregistrée |
+|---|---:|
+| Précision de validation (accuracy) | 97,75 % |
+| F1-score macro | 0,9703 |
+| Échantillons de validation | 577 |
+| Époques enregistrées | 10 |
+
+Ces valeurs décrivent uniquement l'expérience enregistrée dans le dépôt. Elles ne garantissent pas les mêmes performances sur de nouvelles exploitations, caméras, conditions d'éclairage ou images de terrain. Le README ne revendique pas de performance équivalente pour le modèle pomme de terre, car aucun rapport d'évaluation correspondant n'est présent à la racine du dépôt.
+
+### Installation
+```bash
+git clone https://github.com/Slymanidiallo/erecolte-plant-disease-detection.git
+cd erecolte-plant-disease-detection
+python -m venv .venv
+# Windows : .venv\Scripts\activate
+# macOS/Linux : source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
 ```
 
----
+Les poids des modèles et les fichiers JSON doivent rester aux emplacements attendus par l'application.
 
-## 👤 Auteur & Contact
-
-**Thierno S. Diallo**  
-📧 Email : [thierno.s.diallo@aims-senegal.org](mailto:thierno.s.diallo@aims-senegal.org)  
-🐙 GitHub : [@Slymanidiallo](https://github.com/Slymanidiallo)
-
----
-*Projet développé dans le cadre de l'initiative E-RECOLTE — Intelligence Artificielle appliquée à l'Agriculture Durable.*
+### Limites et utilisation responsable
+- Les prédictions sont expérimentales et peuvent être erronées ; demandez l'avis d'un agronome avant toute intervention.
+- Les conseils de traitement doivent être vérifiés selon la réglementation locale, les étiquettes des produits, les conditions de culture et les délais avant récolte.
+- Le code présente l'interface vocale comme une simulation ; la synthèse vocale réelle en langues locales n'est pas implémentée dans cette version.
+- Le score de confiance du modèle ne doit pas être interprété comme une probabilité de maladie parfaitement calibrée.
